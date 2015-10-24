@@ -1,0 +1,25 @@
+{
+  "name": "pool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mkdir": "mkdirp dist/js/",
+    "js": "browserify -t babelify -d src/js/main.js -o dist/js/bundle.js",
+    "watch": "watchify -t babelify -d src/js/main.js -o dist/js/bundle.js",
+    "webserver": "ws",
+    "dev": "npm run mkdir && npm run webserver | npm run watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^6.4.0",
+    "browserify": "^11.2.0",
+    "local-web-server": "^0.5.23",
+    "mkdirp": "^0.5.1",
+    "three-orbit-controls": "^71.1.0",
+    "three.js": "^0.73.0",
+    "watchify": "^3.4.0"
+  }
+}
