@@ -15,9 +15,10 @@ class Loader {
 
     this.loadTextures([
       'pool_texture.png',
+      'pool_bump.jpg',
       'wood.jpg',
       'wood_bump.jpg',
-      'wood_vio.jpg'
+      'wood_normal.jpg'
     ]);
 
     this.manager.onLoad = this.resolve;
